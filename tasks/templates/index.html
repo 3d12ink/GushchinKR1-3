@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Task Tracker</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        {% csrf_token %}
+        <div class="container">
+            <br />
+            <h2><strong>Task Tracker 📝 Гущин Е.А. </strong></h2> #Гущин Е.А. в 19 строке написал: Гущин Е.А. Красивая фамилия!!!
+
+            <br />
+
+            <ul class="list-group">
+                <li class="list-group-item mb-2">Запустить python manage.py migrate в Shell</li> #ВЕРНО!
+                <li class="list-group-item mb-2">Запустить python manage.py startapp tasks в Shell</li> #ПРАВИЛЬНО!
+                <li class="list-group-item mb-2">В INSTALLED_APPS внести 'tasks.apps.TasksConfig'</li> #ДА!
+                <li class="list-group-item mb-2">Создать модель Task в tasks/models.py</li> #ВЕРНО! # Что это означает? # модель Task это описание задачи в коде. Она определяет, какие поля будут у задачи
+                <li class="list-group-item mb-2">Создать форму TaskForm в tasks/forms.py</li> #ПРАВИЛЬНО!
+                <li class="list-group-item mb-2">Создать представление TaskListView в tasks/views.py</li> #ВЕРНО!
+                <li class="list-group-item mb-2">Создать шаблон tasks/templates/index.html</li> #ПРАВИЛЬНО!
+                <li class="list-group-item mb-2">Создать URL-маршрут в tasks/urls.py</li> #ОТЛИЧНО!
+                <li class="list-group-item mb-2">Включить URL-маршруты tasks в основной urls.py</li> #ДА!
+                <li class="list-group-item mb-2">Запустить сервер и проверить работу приложения</li> #ВЕРНО!
+                <li class="list-group-item mb-2">Создать представление TaskCreateView в tasks/views.py</li> #ПРАВИЛЬНО!
+                <li class="list-group-item mb-2">КЛЮЧ: FIREBASE_API_KEY, значение: 1234</li> #ДА!
+                <li class="list-group-item mb-2">Кузнецов И.А. в 19 строке написал: Кузнецов И.А.</li> #ВЕРНО!?!?            
+            </ul>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
